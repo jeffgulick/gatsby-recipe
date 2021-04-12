@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 
-const about = () => {
+const About = () => {
   return (
     <Layout>
       <main className="page">
@@ -38,4 +38,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

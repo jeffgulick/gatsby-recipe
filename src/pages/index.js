@@ -11,7 +11,7 @@ const Home = () => {
             src="../assets/images/main.jpeg"
             alt="eggs"
             className="hero-img"
-            placeholder="tracedSVG"
+            placeholder="blurred"
             layout="fullWidth"
           ></StaticImage>
           <div className="hero-container">

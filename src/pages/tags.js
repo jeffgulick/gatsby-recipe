@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 
-const tags = () => {
+const Tags = () => {
     return (
         <Layout>
             tags
@@ -9,4 +9,4 @@ const tags = () => {
     )
 }
 
-export default tags
+export default Tags
