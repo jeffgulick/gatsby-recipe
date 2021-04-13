@@ -1,12 +1,14 @@
-import React from 'react'
-import Layout from '../components/Layout'
+import React from "react";
+import Layout from "../components/Layout";
+import Gallery from '../examples/Gallery'
 
-const Recipes = () => {
-    return (
-        <Layout>
-            recipes page
-        </Layout>
-    )
-}
+const Recipes = ({ data }) => {
+  return (
+    <Layout>
+      <p>recipes page</p>
+      <Gallery />
+    </Layout>
+  );
+};
 
-export default Recipes
+export default Recipes;

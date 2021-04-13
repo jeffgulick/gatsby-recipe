@@ -6,6 +6,17 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Simply Recipes",
+    description: "Nice and clean recipes site",
+    author: "Jeff Gulick",
+    person: { name: "john", age: 32 },
+    simpleData: ["item 1", "item 2"],
+    complexData: [
+      { name: "john", age: 32 },
+      { name: "susan", age: 21 },
+    ],
+  },
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
@@ -18,14 +29,14 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: `1sfeg2xcbtuz`,
-        // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: `1nbHjd66EXSx6nNgEdRPZzTYUbDlk_oQl9OsjlkeiWA`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-contentful`,
+    //   options: {
+    //     spaceId: `1sfeg2xcbtuz`,
+    //     // Learn about environment variables: https://gatsby.dev/env-vars
+    //     accessToken: `1nbHjd66EXSx6nNgEdRPZzTYUbDlk_oQl9OsjlkeiWA`,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-webfonts`,
       options: {
