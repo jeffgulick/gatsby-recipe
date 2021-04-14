@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
-import Gallery from '../examples/Gallery'
+import AllRecipes from "../components/AllRecipes"
 
-const Recipes = ({ data }) => {
+const Recipes = () => {
   return (
     <Layout>
       <p>recipes page</p>
-      <Gallery />
+      <AllRecipes />
     </Layout>
   );
 };

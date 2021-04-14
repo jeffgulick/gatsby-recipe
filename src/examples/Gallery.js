@@ -31,17 +31,20 @@ const Gallery = () => {
       <Wrapper>
         {nodes.map((image, index) => {
           const { name } = image;
-          const pathToImage = getImage(image)
+          const pathToImage = getImage(image);
           //image.childImageSharp.gatsbyImageData is the same as below
-          {/* const {
+          {
+            /* const {
             childImageSharp: { gatsbyImageData },
-          } = image; */}
+          } = image; */
+          }
 
           return (
             <article key={index} className="item">
               <GatsbyImage
                 // image={gatsbyImageData}
-                image={pathToImage}                alt={name}
+                image={pathToImage}
+                alt={name}
                 className="gallery-img"
               />
               <p>{name}</p>
@@ -59,8 +62,8 @@ const Wrapper = styled.section`
   .item {
     margin-right: 1rem;
   }
-  .gallery-img{
-      border-radius: 1rem;
+  .gallery-img {
+    border-radius: 1rem;
   }
 `;
 
