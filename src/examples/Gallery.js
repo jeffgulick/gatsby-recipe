@@ -33,11 +33,6 @@ const Gallery = () => {
           const { name } = image;
           const pathToImage = getImage(image);
           //image.childImageSharp.gatsbyImageData is the same as below
-          {
-            /* const {
-            childImageSharp: { gatsbyImageData },
-          } = image; */
-          }
 
           return (
             <article key={index} className="item">

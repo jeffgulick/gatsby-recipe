@@ -22,20 +22,18 @@ const query = graphql`
   }
 `;
 const AllRecipes = () => {
-  //   const data = useStaticQuery(query);
-  //   const {allContentfulRecipe: {nodes:recipes}} = data
-  // or
   // const data = useStaticQuery(query)
   // const recipes = data.allContentfulRecipe.nodes
   //below destructures the data returned to useStaticQuery. the data from the query. above is another way to do
+  //the same. cant decide which i like better
   const { allContentfulRecipe: { nodes: recipes } } = useStaticQuery(query);
 
   console.log(recipes);
   return (
     <div>
       <h4>AllRecipes</h4>
-      <TagsList />
-      <RecipesList />
+      <TagsList recipes={recipes} />
+      <RecipesList recipes={recipes} />
     </div>
   );
 };
