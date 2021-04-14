@@ -3,6 +3,7 @@ import TagsList from "./TagsList";
 import RecipesList from "./RecipesList";
 import { useStaticQuery, graphql } from "gatsby";
 
+//query contentful for all of the recipe information for use in home and about pages
 const query = graphql`
   {
     allContentfulRecipe(sort: { fields: title, order: ASC }) {
@@ -27,8 +28,8 @@ const AllRecipes = () => {
   //below destructures the data returned to useStaticQuery. the data from the query. above is another way to do
   //the same. cant decide which i like better
   const { allContentfulRecipe: { nodes: recipes } } = useStaticQuery(query);
-
   console.log(recipes);
+
   return (
     <div>
       <h4>AllRecipes</h4>
