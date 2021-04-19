@@ -31,11 +31,10 @@ const AllRecipes = () => {
   console.log(recipes);
 
   return (
-    <div>
-      <h4>AllRecipes</h4>
+    <section className="recipes-container">
       <TagsList recipes={recipes} />
       <RecipesList recipes={recipes} />
-    </div>
+    </section>
   );
 };
 
