@@ -3,7 +3,7 @@ import TagsList from "./TagsList";
 import RecipesList from "./RecipesList";
 import { useStaticQuery, graphql } from "gatsby";
 
-//query contentful for all of the recipe information for use in home and about pages
+//static query contentful for all of the recipe information for use in home and about pages
 const query = graphql`
   {
     allContentfulRecipe(sort: { fields: title, order: ASC }) {
