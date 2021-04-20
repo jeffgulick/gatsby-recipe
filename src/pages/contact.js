@@ -49,6 +49,7 @@ const Contact = ({ data }) => {
   );
 };
 
+//page query for featured recipes
 export const query = graphql`
   {
     allContentfulRecipe(
