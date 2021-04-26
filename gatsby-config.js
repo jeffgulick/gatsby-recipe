@@ -3,22 +3,16 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
- require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Simply Recipes",
-    description: "Nice and clean recipes site",
-    author: "Jeff Gulick",
-    person: { name: "john", age: 32 },
-    simpleData: ["item 1", "item 2"],
-    complexData: [
-      { name: "john", age: 32 },
-      { name: "susan", age: 21 },
-    ],
+    title: 'Simply Recipes',
+    description: 'Nice and clean recipes site',
+    author: 'Jeff Gulick',
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -46,12 +40,12 @@ module.exports = {
         fonts: {
           google: [
             {
-              family: "Montserrat",
-              variants: ["400"],
+              family: 'Montserrat',
+              variants: ['400'],
             },
             {
-              family: "Inconsolata",
-              variants: ["400", "500", "600", "700"],
+              family: 'Inconsolata',
+              variants: ['400', '500', '600', '700'],
             },
           ],
         },
@@ -59,4 +53,4 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
   ],
-}
+};
